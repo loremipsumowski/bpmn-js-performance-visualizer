@@ -37,6 +37,5 @@ document.getElementById('mode-time').addEventListener('click', () => {
 });
 
 document.getElementById('mode-avg').addEventListener('click', () => {
-  console.log(1)
   monitoring.setMode('avg_minutes');
 });
