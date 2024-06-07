@@ -1,0 +1,62 @@
+/* style.css */
+
+/* Style for the controls container */
+.controls {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Style for the buttons */
+.controls button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.controls button:hover {
+  background-color: #0056b3;
+}
+
+/* Active state for buttons */
+.controls button:active {
+  background-color: #004494;
+}
+
+/* Style for the canvas container */
+.canvas {
+  width: 100%;
+  height: 80vh;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Ensuring the buttons are responsive */
+@media (max-width: 600px) {
+  .controls {
+    flex-direction: column;
+  }
+  .controls button {
+    margin: 5px 0;
+    width: 100%;
+  }
+}
+.custom-fill {
+  fill-opacity: 0.5 !important;
+}
+
+.custom-stroke {
+  stroke-opacity: 0.5 !important;
+}

@@ -1,0 +1,102 @@
+{
+  "StartEvent_1": {
+    "count": 100,
+    "time_minutes": 5,
+    "avg_minutes": 0.05
+  },
+  "Task_1": {
+    "count": 95,
+    "time_minutes": 150,
+    "avg_minutes": 1.58
+  },
+  "Gateway_1": {
+    "count": 95,
+    "time_minutes": 3,
+    "avg_minutes": 0.03
+  },
+  "Task_2": {
+    "count": 20,
+    "time_minutes": 30,
+    "avg_minutes": 1.5
+  },
+  "StartEvent_2": {
+    "count": 75,
+    "time_minutes": 2,
+    "avg_minutes": 0.03
+  },
+  "Task_3": {
+    "count": 75,
+    "time_minutes": 300,
+    "avg_minutes": 4
+  },
+  "ServiceTask_1": {
+    "count": 75,
+    "time_minutes": 450,
+    "avg_minutes": 6
+  },
+  "EndEvent_2": {
+    "count": 75,
+    "time_minutes": 1,
+    "avg_minutes": 0.01
+  },
+  "Task_4": {
+    "count": 75,
+    "time_minutes": 50,
+    "avg_minutes": 0.67
+  },
+  "EndEvent_1": {
+    "count": 95,
+    "time_minutes": 5,
+    "avg_minutes": 0.05
+  },
+  "Flow_1": {
+    "count": 100,
+    "time_minutes": 5,
+    "avg_minutes": 0.05
+  },
+  "Flow_2": {
+    "count": 95,
+    "time_minutes": 3,
+    "avg_minutes": 0.03
+  },
+  "Flow_3": {
+    "count": 20,
+    "time_minutes": 1,
+    "avg_minutes": 0.05
+  },
+  "Flow_4": {
+    "count": 75,
+    "time_minutes": 2,
+    "avg_minutes": 0.03
+  },
+  "Flow_5": {
+    "count": 20,
+    "time_minutes": 1,
+    "avg_minutes": 0.05
+  },
+  "Flow_6": {
+    "count": 75,
+    "time_minutes": 3,
+    "avg_minutes": 0.04
+  },
+  "Flow_7": {
+    "count": 75,
+    "time_minutes": 1,
+    "avg_minutes": 0.01
+  },
+  "Flow_8": {
+    "count": 75,
+    "time_minutes": 1,
+    "avg_minutes": 0.01
+  },
+  "Flow_9": {
+    "count": 75,
+    "time_minutes": 1,
+    "avg_minutes": 0.01
+  },
+  "Flow_10": {
+    "count": 75,
+    "time_minutes": 2,
+    "avg_minutes": 0.03
+  }
+}
