@@ -83,6 +83,10 @@ To lint the code and automatically fix issues, run:
 npm run lint
 ```
 
+## Acknowledgements
+
+This project was inspired by [bpmn-visualization-js](https://github.com/process-analytics/bpmn-visualization-js).
+
 ## License
 
 This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
