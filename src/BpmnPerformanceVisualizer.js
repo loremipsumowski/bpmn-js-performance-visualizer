@@ -127,6 +127,10 @@ export default class BpmnJsMonitoring extends BaseRenderer {
   }
 
   addConnectionLabel(parentNode, element, label) {
+    
+    if ([null, undefined, ''].includes(label)) {
+      return;
+    }
     const waypoints = element.waypoints;
 
     const midpoints = waypoints.map((point, index) => {
@@ -176,6 +180,9 @@ export default class BpmnJsMonitoring extends BaseRenderer {
   }
 
   addGlow(parentNode, element, value) {
+    if ([null, undefined].includes(value)) {
+      return;
+    }
     const waypoints = element.waypoints;
     const pathData = waypoints.map((point, index) => {
       return index === 0 ? `M${point.x},${point.y}` : `L${point.x},${point.y}`;
@@ -195,6 +202,9 @@ export default class BpmnJsMonitoring extends BaseRenderer {
   }
 
   addFill(parentNode, element, value) {
+    if ([null, undefined].includes(value)) {
+      return;
+    }
     const fillColor = this.getColor(value, 0.5);
     const rect = parentNode.querySelector('rect, ellipse, polygon, circle, path');
     if (rect) {

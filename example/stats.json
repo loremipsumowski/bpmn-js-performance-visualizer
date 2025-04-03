@@ -52,51 +52,51 @@
   "Flow_1": {
     "count": 100,
     "time_minutes": 5,
-    "avg_minutes": 0.05
+    "avg_minutes": null
   },
   "Flow_2": {
     "count": 95,
     "time_minutes": 3,
-    "avg_minutes": 0.03
+    "avg_minutes": null
   },
   "Flow_3": {
     "count": 20,
     "time_minutes": 1,
-    "avg_minutes": 0.05
+    "avg_minutes": null
   },
   "Flow_4": {
     "count": 75,
     "time_minutes": 2,
-    "avg_minutes": 0.03
+    "avg_minutes": null
   },
   "Flow_5": {
     "count": 20,
     "time_minutes": 1,
-    "avg_minutes": 0.05
+    "avg_minutes": null
   },
   "Flow_6": {
     "count": 75,
     "time_minutes": 3,
-    "avg_minutes": 0.04
+    "avg_minutes": null
   },
   "Flow_7": {
     "count": 75,
     "time_minutes": 1,
-    "avg_minutes": 0.01
+    "avg_minutes": null
   },
   "Flow_8": {
     "count": 75,
     "time_minutes": 1,
-    "avg_minutes": 0.01
+    "avg_minutes": null
   },
   "Flow_9": {
     "count": 75,
     "time_minutes": 1,
-    "avg_minutes": 0.01
+    "avg_minutes": null
   },
   "Flow_10": {
     "count": 75,
     "time_minutes": 2,
-    "avg_minutes": 0.03
+    "avg_minutes": null
   }
 }
