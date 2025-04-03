@@ -203,9 +203,9 @@ export default class BpmnJsMonitoring extends BaseRenderer {
   }
 
   getGlowThickness(value) {
-    const ratio = (value - this._minValue) / (this._maxValue - this._minValue);
-    const minThickness = 2;
-    const maxThickness = 10;
+    const ratio = (value - this._minValue) / ((this._maxValue - this._minValue) || 1);
+    const minThickness = 10;
+    const maxThickness = 40;
     return minThickness + ratio * (maxThickness - minThickness);
   }
 
@@ -213,7 +213,7 @@ export default class BpmnJsMonitoring extends BaseRenderer {
     if (typeof value === 'string') {
       value = this._parseTime(value);
     }
-    const ratio = (value - this._minValue) / (this._maxValue - this._minValue);
+    const ratio = (value - this._minValue) / ((this._maxValue - this._minValue) || 1);
     const red = Math.floor(255 * ratio);
     const green = Math.floor(255 * (1 - ratio));
     return `rgb(${red},${green},0,${opacity})`;
