@@ -10,12 +10,19 @@ export default class BpmnJsMonitoring extends BaseRenderer {
     this.bpmnRenderer = bpmnRenderer;
     this.canvas = canvas;
     this._stats = {};
+    this._elementsToUpdate = [];
     this._minValue = 0;
     this._maxValue = 0;
     this.mode = 'count'; // Default mode is 'count'
   }
 
   setStats(stats) {
+    this._elementsToUpdate = [
+      ...new Set([
+        ...Object.keys(this._stats),
+        ...Object.keys(stats),
+      ])
+    ];
     this._stats = stats;
     this._updateMinMaxValues();
     this._updateDiagram();
@@ -50,7 +57,9 @@ export default class BpmnJsMonitoring extends BaseRenderer {
     const rootElements = this.canvas.getRootElement().children;
 
     function collectElements(element) {
-      elements.push(element);
+      if (this._elementsToUpdate.includes(element.id)) {
+        elements.push(element);
+      }
       if (element.children) {
         element.children.forEach(collectElements);
       }
